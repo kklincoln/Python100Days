@@ -6,7 +6,7 @@ import time
 MY_LAT = 33.720577
 MY_LONG = -116.215561
 MY_EMAIL = "testingpythondev@gmail.com"
-MY_PASSWORD = "krcbnhefmircnqkn"
+MY_PASSWORD = ""
 
 
 def send_email():

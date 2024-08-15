@@ -3,12 +3,12 @@ import os
 from twilio.rest import Client
 
 OWM_ENDPOINT="https://api.openweathermap.org/data/2.5/forecast"
-API_KEY = "a18c00ccd8d3cf6b5468b332d245100d"
+API_KEY = ""
 #GET LAT LONG FROM Latlong.net for currently raining location
 LAT = 38.7714
 LONG =-90.3709
-TWILIO_ACCOUNT_SID ="AC2d8e7a362559b0a4714a984bea8e22b0"
-TWILIO_AUTH_TOKEN="5ee41feff9d329f473f27e2d8d16fd8b"
+TWILIO_ACCOUNT_SID =""
+TWILIO_AUTH_TOKEN=""
 #TWILIO Number: +18335060881
 
 
