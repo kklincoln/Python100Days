@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+<!--			replacing the html code for form with -->
+{% from 'bootstrap5/form.html' import render_form %}
+{% block title %}Login{% endblock %}
+{% block content %}
+	<div class="container">
+	<h1>Login</h1>
+		{{ render_form(form) }}
+	</div>>
+{% endblock %}
+        <!-- This is where our form will go. -->
+			<!--HINT: If you want to add csrf protection, you will need to add the following code in your login.html:-->
+			<!--and you will need to create a secret key in your main.py, which will be used to generate the csrf_token. e.g.-->
+			<!--Both email and password inputs should be size 30. (This describes the width of the input).-->
+			<!--You should not need to create any <label> or <input> elements manually using HTML.-->
+<!--			note: the novalidate section is turning off the browser validation-->
+<!--			<form method="POST" action="{{ url_for('login') }}" novalidate>-->
+<!--			{{ form.csrf_token }}-->
+<!--				<p>-->
+<!--					{{ form.email.label }} <br> {{ form.email(size=30) }}-->
+<!--					{% for err in form.email.errors %}-->
+<!--					<span style="color:red">{{ err }}</span>-->
+<!--					{% endfor %}-->
+<!--				</p>-->
+<!--				<p>-->
+<!--					{{ form.password.label }} <br> {{ form.password(size=30) }}-->
+<!--					{% for err in form.password.errors %}-->
+<!--					<span style="color:red">{{ err }}</span>-->
+<!--					{% endfor %}-->
+<!--				</p>-->
+<!--			{{ form.login_btn }}-->
+<!--		</form>-->
+

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--creating a base template file that has predetermined areas (blocks) that allows for new content to be inserted by
+a child webpage inheriting from this template.-->
+    <meta charset="UTF-8" />
+    <!--using bootstrap as the template, rather than super (inheritance)-->
+    {% block styles %} {{ bootstrap.load_css() }} {% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+
+  <body>
+    {% block content %}{% endblock %}
+  </body>
+</html>

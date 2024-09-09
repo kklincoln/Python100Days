@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--tells the template engine (jinja) to use base.html as the template-->
+{% extends "base.html" %}
+<!--provides the content for the title block, uses the base.html template-->
+{% block title %}Denied{%  endblock %}
+
+<!--using bootstrap as the template, rather than super (inheritance)-->
+    {% block styles %} {{ bootstrap.load_css() }} {% endblock %}
+
+
+<!--provides the content for the body block, using the base.html template-->
+{% block content %}
+	<div class="container">
+		<h1>Access Denied </h1>
+		<iframe src="https://giphy.com/embed/1xeVd1vr43nHO" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+	</div>
+{% endblock %}
+</html>

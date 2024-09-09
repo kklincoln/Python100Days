@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--form methods: get (appends the form-data to the url in name/value pairs) post(sends the form-data as HTTP post tx)-->
+    <form action="{{ url_for('receive_data') }}" method="post">
+        <label for="name">Name</label>
+<!--        adding name attributes to "catch" the POST requests-->
+        <input type="text" id="name" placeholder="name" name="name">
+        <label for="password">password</label>
+        <input type="text" id="password" placeholder="password" name="password">
+        <button type="submit">Ok</button>
+    </form>
+
+</body>
+</html>

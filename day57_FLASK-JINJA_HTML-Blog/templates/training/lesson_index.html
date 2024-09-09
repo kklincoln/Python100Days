@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+<!--    this evaluates the python script within the curly braces-->
+    <h2>{{5 * 6}}</h2>
+<!--    this will be the keyword argument associated with the randomint() that generates a random number-->
+    <h3>{{num}}</h3>
+<!--    "(get_)url_for" returns the path that is required to call the particular method-->
+<a href="{{ url_for('get_blog', num=3) }}">Go To Blog</a>
+</body>
+<footer>
+    <p>Copyright {{copyright_yr}} Built by Kiernan Lincoln for Python Portfolio</p>
+</footer>
+</html>

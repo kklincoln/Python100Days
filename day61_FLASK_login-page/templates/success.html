@@ -1,0 +1,24 @@
+  <!--tells the template engine (jinja) to use base.html as the template-->
+  {% extends "base.html" %}
+
+  <!--inserts a custom title into the header of the template base.html-->
+  {% block title %}Success{% endblock %}
+
+  <!--adding super block {{ super() }} to inject the code in the styling block into this child page, allowing for more additions-->
+    {% block styles %} {{ bootstrap.load_css() }} {% endblock %}
+  <!--provides the content of the website; will vary between webpages-->
+  {% block content %}
+
+  <div class="container">
+    <h1>Success</h1>
+    <iframe
+      src="https://giphy.com/embed/Ju7l5y9osyymQ"
+      width="480"
+      height="360"
+      frameborder="0"
+      class="giphy-embed"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  {% endblock %}
